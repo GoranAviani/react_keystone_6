@@ -16,9 +16,13 @@ export const client = new ApolloClient({
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+        <ApolloProvider client={client}>
+
   <React.StrictMode>
     <App />
   </React.StrictMode>
+                </ApolloProvider>
+
 );
 
 // If you want to start measuring performance in your app, pass a function
