@@ -4,7 +4,6 @@ export const POSTS_DATA = gql`
   query PostsQuery {
     posts{
       title
-      author
     }
   }
   `;
